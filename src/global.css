@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+@import 'uniwind';
+@import 'heroui-native/styles';
+@import './theme/themes/mono.css';
+
+@source '../node_modules/heroui-native/lib';
+
+@theme {
+  /* One font name per variable: React Native has no fallback stacks. */
+  --font-sans: 'Geist_400Regular';
+  --font-sans-medium: 'Geist_500Medium';
+  --font-sans-semibold: 'Geist_600SemiBold';
+  --font-sans-bold: 'Geist_700Bold';
+
+  --font-serif: 'InstrumentSerif_400Regular';
+
+  /* 700px sits between the widest phone in portrait (440) and the narrowest tablet
+     (iPad mini, 744); stock `md:` at 768 would miss the mini. */
+  --breakpoint-tablet: 700px;
+}
